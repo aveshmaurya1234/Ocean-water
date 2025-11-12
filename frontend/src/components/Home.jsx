@@ -1,92 +1,87 @@
 import React from 'react'
 import { FaRegHandshake } from "react-icons/fa";
-import { BiSolidRightArrowAlt } from "react-icons/bi";
-import Button from './Button';
 import Box1 from './Boxes1/Box1';
 import Box2 from './Boxes1/Box2';
 import Box3 from './Boxes1/Box3';
-import VideoBox from './Boxes1/VideoBox';
-import Rating from './Boxes1/Rating';
-import Reviews from './Boxes1/Reviews';
 
 const Home = () => {
     const image = [
         {
-            img:"/src/assets/img1.jpeg",
+            img:"/src/assets/image20.jpeg",
             text:"New Development"
         },
         {
-            img:"/src/assets/img2.jpeg",
+            img:"/src/assets/image21.jpeg",
             text:"Flow Meter"
         },
         {
-            img:"/src/assets/img3.jpeg",
+            img:"/src/assets/image22.jpeg",
             text:"Water Meters"
         },
         {
-            img:"/src/assets/img4.jpeg",
+            img:"/src/assets/image23.jpeg",
             text:"Ultrasonic Flow Meter"
         },
         {
-            img:"/src/assets/img5.jpeg",
+            img:"/src/assets/image24.jpeg",
             text:"Electromagnetic Flow Merter"
         },
         {
-            img:"/src/assets/img6.jpeg",
+            img:"/src/assets/image25.jpeg",
             text:"Residential Water Merter"
         },
         {
-            img:"/src/assets/img7.jpeg",
+            img:"/src/assets/image26.jpeg",
             text:"Dosing Pump"
         },
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/438427143/AZ/NJ/HI/209080/product-jpeg-125x125.jpg",
+            img:"/src/assets/image27.jpeg",
             text:"Water Meter Box"
         },
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/436562872/YF/RU/XJ/209080/product-jpeg-125x125.jpg",
+            img:"/src/assets/image29.jpeg",
             text:"Turbin Flow Meter"
         }
     ]
     const image2 = [
 
         {
-            img:"/src/assets/img7.jpeg",
+            img:"/src/assets/image5.jpeg",
             text:"New Development",
             tag:{ isOpen:true, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
         {
-            img:"/src/assets/img3.jpeg",
+            img:"/src/assets/image4.jpeg",
             text:"Flow Meter",
             tag:{ isOpen:true, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
         {
-            img:"/src/assets/img4.jpeg",
+            img:"/src/assets/image7.jpeg",
             tag:{ isOpen:false, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
     ]
     const image3 = [
 
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/438475671/GO/GJ/JM/209080/product-jpeg-250x250.jpg",
+            img:"/src/assets/image8.jpeg",
             text:"New Development",
             tag:{ isOpen:true, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/438427143/AZ/NJ/HI/209080/product-jpeg-250x250.jpg",
+            img:"/src/assets/image9.jpeg",
             text:"Flow Meter",
             tag:{ isOpen:true, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/438456437/MR/YE/KZ/209080/product-jpeg-250x250.jpg",
+            img:"/src/assets/image10.jpeg",
             tag:{ isOpen:false, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/436564943/CY/XJ/RP/209080/product-jpeg-250x250.jpg",
+            img:"/src/assets/image11.jpeg",
             tag:{ isOpen:false, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
         {
-            img:"https://5.imimg.com/data5/ANDROID/Default/2024/7/438456437/MR/YE/KZ/209080/product-jpeg-250x250.jpg",
+            img:"/src/assets/image12.jpeg",
             tag:{ isOpen:false, tagTitle:"Download Now . .", tagColor:"yellow"},
         },
     ]
@@ -259,11 +254,7 @@ const Home = () => {
 
         <Box1/>
         <Box2/>
-        <Box3/>
-        <VideoBox/>
-        <Rating/>
-        <Reviews/>
-        
+        <Box3/>       
     </div>
   )
 }

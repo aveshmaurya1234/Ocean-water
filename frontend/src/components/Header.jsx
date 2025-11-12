@@ -3,17 +3,36 @@ import { FiPhoneCall } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCheckmarkCircle } from "react-icons/io";
+import { useEffect, useState } from 'react';
+
 
 const Header = () => {
     const btn = [
         { icon: <FiPhoneCall size={22} color='teal'/>, text: "Call 08048603891", p: "94% Response rate", color:"blue" },
         { icon: <CiMail size={22}  />, text: "Send email", color:"green" },
     ]
+
+    const [hasShadow, setHasShadow] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        setHasShadow(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up on unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
   return (
-    <div className='fixed top-0 z-10 h-25 shadow-lg shadow-gray-500 flex items-center justify-between px-3 bg-white w-full'>
+    <header
+        className={`h-25 fixed top-0 w-full z-50 bg-white transition-shadow duration-300 ${
+            hasShadow ? 'shadow-lg' : ''
+        }`} >
+    <div className='  flex items-center justify-between px-3 bg-white w-full'>
         <div className='flex items-center gap-3'>
             <div>
-                <img className='w-20' src="/src/assets/logo.jpg" alt="" />
+                <img className='w-22' src="/src/assets/logo.jpg" alt="" />
             </div>
             <div>
                 <h1 className='text-xl font-bold'>OCEAN WATER AND ENVIRO SOLUTIONS (INDIA) </h1>
@@ -43,8 +62,11 @@ const Header = () => {
             }
         </div>
     </div>
+    </header>
 
   )
 }
 
 export default Header
+
+
